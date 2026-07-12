@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Comunicaciones",
+			"path": "../../../../.."
+		},
+		{
+			"name": "tracasa-components",
+			"path": "../../../../../../tracasa-components"
+		}
+	],
+	"settings": {}
+}

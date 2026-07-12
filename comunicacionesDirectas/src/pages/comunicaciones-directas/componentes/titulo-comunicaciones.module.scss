@@ -1,0 +1,19 @@
+.titulo_comunicaciones {
+  gap: 0.5rem;
+  display: inline;
+  margin: 0;
+  font-family: var(--font-family-base, 'Segoe UI', sans-serif);
+
+  &__titulo {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-gray-900);
+  }
+
+  &__detalle {
+    margin-left: 0.5rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--color-default-secondary);
+  }
+}

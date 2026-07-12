@@ -1,0 +1,23 @@
+.tarjeta-carga__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  z-index: 100;
+  flex: 1;
+  padding: 1rem;
+  background-color: rgba(221, 225, 230, 0.12);
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.tarjeta-carga__container__imagen {
+  background: rgba(51, 122, 184, 0.04);
+  border-radius: 0.25rem;
+}
+
+.tarjeta-carga__container__imagen svg {
+  opacity: 30%;
+}

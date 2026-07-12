@@ -1,6 +1,6 @@
 {
-  "installCommand": "corepack enable && corepack prepare pnpm@10.17.1 --activate && pnpm install --dir comunicacionesDirectas --no-frozen-lockfile",
-  "buildCommand": "cd comunicacionesDirectas && pnpm build",
+  "installCommand": "npm install --prefix comunicacionesDirectas",
+  "buildCommand": "npm run build --prefix comunicacionesDirectas",
   "outputDirectory": "comunicacionesDirectas/dist",
   "framework": null
 }

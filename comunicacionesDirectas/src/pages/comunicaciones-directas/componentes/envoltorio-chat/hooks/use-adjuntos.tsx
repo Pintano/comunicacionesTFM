@@ -5,7 +5,7 @@ import {
   ResultadoSubirFichero,
   TiposExpediente,
   useFileHandler,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import { getColumnasSubida } from '../componentes/columnas-subida';
 import { ParametrosParaAdjuntarArchivos } from '../envoltorio-chat.types';
 import { useEffect, useRef, useState } from 'react';

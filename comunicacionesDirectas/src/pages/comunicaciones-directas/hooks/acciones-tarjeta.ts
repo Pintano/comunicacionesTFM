@@ -1,6 +1,6 @@
 import { IComunicacionesDirectasRepository } from '@/shared/repositories/comunicaciones-directas';
 import { t } from 'i18next';
-import { AccionTarjeta } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { AccionTarjeta } from 'tracasa-components';
 import { Dispatch, SetStateAction, useCallback } from 'react';
 import { useComunicacionesDirectasService } from '../ventana-comunicaciones-directas/comunicaciones-directas.service';
 import { ComunicacionInfo } from '@/shared/repositories/comunicaciones-directas/models/comunicaciones-directas';

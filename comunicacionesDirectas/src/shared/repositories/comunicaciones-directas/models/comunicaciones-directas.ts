@@ -1,4 +1,4 @@
-import { DatosElementoADescargar } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { DatosElementoADescargar } from 'tracasa-components';
 
 export enum TipoMensajeConversacion {
   Texto = 1,

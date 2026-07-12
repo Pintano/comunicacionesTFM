@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react';
 import type { TFunction } from 'i18next';
-import type { AvisoProps, TiposProcedimientoEnum } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
-import { TiposProcedimientoEnum as tiposProcedimientoEnum } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import type { AvisoProps, TiposProcedimientoEnum } from 'tracasa-components';
+import { TiposProcedimientoEnum as tiposProcedimientoEnum } from 'tracasa-components';
 
 type SetAviso = Dispatch<SetStateAction<AvisoProps | undefined>>;
 

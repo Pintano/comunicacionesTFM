@@ -11,7 +11,7 @@ import {
   TiposDescarga,
   TiposIDElemento,
   useFileHandler,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import dayjs from 'dayjs';
 import { t } from 'i18next';
 import { useMemo, useState, useEffect } from 'react';

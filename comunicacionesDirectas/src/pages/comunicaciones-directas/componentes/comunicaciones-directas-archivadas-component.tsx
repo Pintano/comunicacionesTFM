@@ -13,7 +13,7 @@ import { useComunicaciones } from '../hooks/marcar-leido';
 
 import { BotonArchivadas } from './boton-archivadas-component';
 import { ListadoComunicaciones } from './tarjeta-comunicacion-component';
-import { InputSearch } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { InputSearch } from 'tracasa-components';
 
 type ComunicacionesDirectasBaseComponentProps = {
   comunicacionesDirectasRepository: IComunicacionesDirectasRepository;

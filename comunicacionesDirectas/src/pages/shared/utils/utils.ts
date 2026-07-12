@@ -1,5 +1,5 @@
 import { OITEnum } from '@/shared/models/enums/oits-enum';
-import { Procedimiento } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { Procedimiento } from 'tracasa-components';
 import dayjs from 'dayjs';
 import { TFunction } from 'i18next';
 import isoWeek from 'dayjs/plugin/isoWeek';

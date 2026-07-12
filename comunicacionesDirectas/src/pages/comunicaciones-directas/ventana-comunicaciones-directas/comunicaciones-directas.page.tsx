@@ -6,7 +6,7 @@ import {
   EmptyState,
   GlobalLayout,
   LayoutComunicaciones,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 
 import { useTitulo } from '@/pages/shared/hooks/use-titulo';
 import { useAvisosContext } from '@/shared/hooks/useAvisosContext.hook';

@@ -22,7 +22,7 @@ import {
 } from '../acciones/acciones-asunto';
 import { TFunction } from 'i18next';
 import { Dispatch, SetStateAction } from 'react';
-import { AvisoProps, TiposAsuntoEnum } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { AvisoProps, TiposAsuntoEnum } from 'tracasa-components';
 
 export const ComprobarUsuarioSoporte = () => {
   const navigate = useNavigate();

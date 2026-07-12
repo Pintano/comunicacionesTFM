@@ -1,5 +1,5 @@
 import { QueryErrorResetBoundary } from '@tanstack/react-query';
-import { TextButton } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { TextButton } from 'tracasa-components';
 import { PropsWithChildren, Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { useTranslation } from 'react-i18next';

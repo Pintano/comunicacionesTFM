@@ -1,6 +1,6 @@
 import { object, string } from 'yup';
 import { compararProcedimientos, validarProcedimiento } from './utils';
-import { Procedimiento } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { Procedimiento } from 'tracasa-components';
 import {
   traducirConParametros,
   translateWithParams,

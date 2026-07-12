@@ -1,6 +1,6 @@
 import { ColumnDef } from '@tanstack/react-table';
-import { DatosElementosAConsolidar } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
-import { ElementoListadoProps } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { DatosElementosAConsolidar } from 'tracasa-components';
+import { ElementoListadoProps } from 'tracasa-components';
 import { Dispatch, SetStateAction } from 'react';
 
 export interface ParametrosParaAdjuntarArchivos {

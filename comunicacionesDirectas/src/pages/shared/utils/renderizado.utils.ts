@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconWrapper, IconWrapperProps } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { IconWrapper, IconWrapperProps } from 'tracasa-components';
 
 export const renderProcedimientoConAbstencion =
   (tooltipAbstenido: string) =>

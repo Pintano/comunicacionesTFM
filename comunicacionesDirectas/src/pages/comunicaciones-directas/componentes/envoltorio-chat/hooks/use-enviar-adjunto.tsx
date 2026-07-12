@@ -11,7 +11,7 @@ import {
   TiposDescarga,
   TiposIDElemento,
   useFileHandler,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import {
   EstadosMensajeConversacion,
   InfoUltimoMensaje,

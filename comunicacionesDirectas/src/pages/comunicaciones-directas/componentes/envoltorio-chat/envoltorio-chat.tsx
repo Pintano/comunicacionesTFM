@@ -1,4 +1,4 @@
-import { ChatLayout, EmptyState } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { ChatLayout, EmptyState } from 'tracasa-components';
 import { useTranslation } from 'react-i18next';
 import { Dispatch, SetStateAction, useCallback, useEffect } from 'react';
 import { ComunicacionesDirectasRepository } from '@/shared/repositories/comunicaciones-directas';

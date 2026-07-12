@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { IconoCarga } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { IconoCarga } from 'tracasa-components';
 import { useTranslation } from 'react-i18next';
 
 import { useAppStore } from '@/shared/zustand/store';

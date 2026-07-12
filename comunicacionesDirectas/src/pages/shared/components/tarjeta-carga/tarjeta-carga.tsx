@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import styles from './tarjeta-carga.module.css';
-import { IconoCarga } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { IconoCarga } from 'tracasa-components';
 
 export type TarjetaCargaProps = React.HTMLAttributes<HTMLDivElement> & {
   texto?: string | undefined;

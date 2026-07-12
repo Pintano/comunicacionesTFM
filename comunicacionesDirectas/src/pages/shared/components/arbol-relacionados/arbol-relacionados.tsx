@@ -2,7 +2,7 @@ import {
   ArbolRelacionados,
   GrupoExpedientes,
   Modal,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import { useTranslation } from 'react-i18next';
 
 interface ArbolRelacionadosModalProps {

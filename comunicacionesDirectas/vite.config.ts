@@ -10,7 +10,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      'C:/Users/ataberna/tracasa-components/src/index.ts': path.resolve(
+      'tracasa-components': path.resolve(
         __dirname,
         './src/shared/vendor/tracasa-components.ts',
       ),

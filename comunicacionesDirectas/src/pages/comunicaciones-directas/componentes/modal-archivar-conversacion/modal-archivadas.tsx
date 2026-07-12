@@ -10,7 +10,7 @@ import {
   Modal,
   RowLayout,
   TextButton,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 
 import CustomErrorBoundary from '@/pages/shared/components/error/error-boundary';
 import { IComunicacionesDirectasRepository } from '@/shared/repositories/comunicaciones-directas';

@@ -1,4 +1,4 @@
-import { BarraHerramientas } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { BarraHerramientas } from 'tracasa-components';
 import { IComunicacionesDirectasRepository } from '@/shared/repositories/comunicaciones-directas';
 
 import { BotonArchivar } from './boton-archivar-component';

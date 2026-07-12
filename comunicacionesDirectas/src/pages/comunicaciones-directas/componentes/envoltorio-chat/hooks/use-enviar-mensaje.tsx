@@ -5,7 +5,7 @@ import {
   EstadosMensajeConversacion,
   InfoUltimoMensaje,
 } from '@/shared/repositories/comunicaciones-directas/models/comunicaciones-directas';
-import { BocadilloProps, EstadosBocadillo } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { BocadilloProps, EstadosBocadillo } from 'tracasa-components';
 
 import { SetStateAction, Dispatch, useRef } from 'react';
 

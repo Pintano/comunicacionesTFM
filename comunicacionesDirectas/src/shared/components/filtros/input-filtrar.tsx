@@ -1,4 +1,4 @@
-import { InputSearch } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { InputSearch } from 'tracasa-components';
 import { useTranslation } from 'react-i18next';
 
 type InputFiltrarProps = {

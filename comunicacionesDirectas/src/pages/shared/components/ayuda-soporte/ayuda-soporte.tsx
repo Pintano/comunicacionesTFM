@@ -1,5 +1,5 @@
 import { openNewWindow } from '@/shared/helpers/helpers';
-import { IconButton } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { IconButton } from 'tracasa-components';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 

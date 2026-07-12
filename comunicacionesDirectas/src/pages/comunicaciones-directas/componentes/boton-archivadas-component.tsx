@@ -4,7 +4,7 @@ import {
   RowLayout,
   TarjetaComunicacion,
   TituloCabecera,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import { useComunicacionesDirectasStore } from '../ventana-comunicaciones-directas/comunicaciones-directas.store';
 
 interface BotonArchivadasProps {

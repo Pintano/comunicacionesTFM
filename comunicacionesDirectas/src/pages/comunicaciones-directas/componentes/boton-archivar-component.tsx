@@ -1,4 +1,4 @@
-import { IconButton } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { IconButton } from 'tracasa-components';
 import { useTranslation } from 'react-i18next';
 import { useComunicacionesDirectasStore } from '../ventana-comunicaciones-directas/comunicaciones-directas.store';
 

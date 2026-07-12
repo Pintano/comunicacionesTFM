@@ -3,7 +3,7 @@ import {
   createColumnDefsInput,
   DatosElementosAConsolidar,
   ElementoListadoProps,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import { TFunction } from 'i18next';
 
 export const getColumnasSubida = (

@@ -1,4 +1,4 @@
-import { IconoCarga } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { IconoCarga } from 'tracasa-components';
 import { PropsWithChildren, Suspense } from 'react';
 import { useTranslation } from 'react-i18next';
 import { default as generalStyles } from '@/shared/styles/general/general.module.css';

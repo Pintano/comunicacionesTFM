@@ -2,7 +2,7 @@ import {
   IconWrapper,
   OpcionSelector,
   Procedimiento,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import { ObjectSchema, array, date, number, object, string } from 'yup';
 import { OrganoJudicial, Pais, Provincia, TipoProcedimiento } from '../comun';
 

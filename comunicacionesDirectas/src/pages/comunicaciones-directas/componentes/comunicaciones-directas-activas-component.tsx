@@ -6,7 +6,7 @@ import {
   TituloCabecera,
   AvisoProps,
   InputSearch,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 
 import styles from '@/shared/styles/general/general.module.css';
 import { IComunicacionesDirectasRepository } from '@/shared/repositories/comunicaciones-directas';

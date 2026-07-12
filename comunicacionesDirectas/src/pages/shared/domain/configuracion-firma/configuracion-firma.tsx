@@ -1,5 +1,5 @@
 import { InformacionConfiguracionFirma } from '@/pages/configuracion-firma/secciones/informacion-firma';
-import { ElementoListadoProps } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import { ElementoListadoProps } from 'tracasa-components';
 import { boolean, date, object, ObjectSchema, string } from 'yup';
 
 export interface ConfiguracionFirmaRequest {}

@@ -3,7 +3,7 @@ import {
   Modal,
   SubidaFicheros,
   Button,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 import { ParametrosParaAdjuntarArchivos } from '../envoltorio-chat.types';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';

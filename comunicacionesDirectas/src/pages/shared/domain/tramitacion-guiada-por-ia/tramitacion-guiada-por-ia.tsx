@@ -4,7 +4,7 @@ import {
   Automatismos,
   ElementoListadoProps,
   OpcionSelector,
-} from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+} from 'tracasa-components';
 
 export interface informacionPlantillasSugeridasRequest {
   idExpedienteEncriptado: string;

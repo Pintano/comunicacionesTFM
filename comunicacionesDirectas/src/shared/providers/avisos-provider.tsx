@@ -1,6 +1,6 @@
 import { createContext, useState, type ReactNode } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
-import type { AvisoProps } from 'C:/Users/ataberna/tracasa-components/src/index.ts';
+import type { AvisoProps } from 'tracasa-components';
 
 export interface AvisosContextType {
   aviso: AvisoProps | undefined;

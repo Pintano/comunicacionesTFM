@@ -161,6 +161,10 @@
     },
     "mensaje": {
       "placeholder": "Introduzca aquí su texto"
+    },
+    "chatLayout": {
+      "placeholder": "Introduzca aquí su texto",
+      "enviar": "Enviar"
     }
   },
   "citius": {

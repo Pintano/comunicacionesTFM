@@ -161,6 +161,11 @@
     },
     "mensaje": {
       "placeholder": "Idatzi hemen zure mezua"
+    },
+    
+    "chatLayout": {
+      "placeholder": "Idatzi hemen zure mezua",
+      "enviar": "Bidali"
     }
   },
   "citius": {

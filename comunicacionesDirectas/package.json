@@ -2,7 +2,7 @@
   "name": "comunicacionesdirectas",
   "private": true,
   "version": "0.0.0",
-  "packageManager": "pnpm@9.15.9",
+  "packageManager": "pnpm@10.17.1",
   "engines": {
     "node": ">=20"
   },

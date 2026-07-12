@@ -1,0 +1,21 @@
+// ========================================
+// CSS CUSTOM PROPERTIES - OPACITY
+// Auto-generated from foundations/opacity
+// ========================================
+
+@use '../foundations/opacity' as *;
+
+$opacity-tokens: (
+  'xs': $opacity-xs,
+  'sm': $opacity-sm,
+  'md': $opacity-md,
+  'lg': $opacity-lg,
+  'xl': $opacity-xl,
+  'full': $opacity-full,
+);
+
+:root {
+  @each $name, $value in $opacity-tokens {
+    --opacity-#{$name}: #{$value};
+  }
+}

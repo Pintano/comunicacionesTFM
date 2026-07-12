@@ -1,0 +1,264 @@
+@use '../../../../styles' as *;
+
+.input {
+  --input-color: var(--color-default-primary);
+  --input-color-disabled: var(--color-default-disabled);
+  --input-icon-color: var(--color-default-secondary);
+  --input-bg: var(--theme-dark-overlay-64);
+  --input-bg-disabled: var(--theme-overlay-2);
+  --input-border-radius: #{$radius-xs};
+
+  --input-shadow-focus: 0 0 0 #{$space-0-25} var(--theme-primary-500);
+  --input-border-focus: var(--theme-primary-500);
+
+  // Border tokens
+  --input-border: var(--theme-overlay-16);
+  --input-border-hover: var(--theme-overlay-54);
+  --input-border-disabled: var(--theme-overlay-12);
+  --input-border-active: var(--theme-primary-600);
+  --input-border-focus: var(--theme-primary-600);
+
+  // Error tokens
+  --input-error-text: var(--color-error);
+  --input-border-error: #{$color-trans-red-500-64};
+  --input-border-error-hover: #{$color-trans-red-500-84};
+  --input-border-error-disabled: #{$color-trans-red-500-64};
+  --input-border-error-active: #{$color-red-500};
+  --input-border-error-focus: #{$color-red-500};
+  --input-shadow-error-focus: 0 0 0 #{$space-0-25} #{$color-red-500};
+
+  // Icon positioning
+  --input-icon-offset: #{$space-2};
+  --input-icon-size: #{$space-2};
+
+  width: 100%;
+  position: relative;
+}
+
+.input__container {
+  @include flex-start-center;
+  position: relative;
+  width: 100%;
+}
+
+.input__field {
+  align-items: center;
+  width: 100%;
+  height: $space-5;
+  padding: $space-1 $space-2;
+  border: 1px solid var(--input-border);
+  border-radius: var(--input-border-radius);
+  background: var(--input-bg);
+  color: var(--input-color-disabled);
+  font-size: $font-size-md;
+  line-height: $font-height-md;
+  font-family: $font-family-base;
+  font-weight: $font-weight-regular;
+  box-sizing: border-box;
+  transition: $transition-input;
+  @include overflow-hidden;
+
+  &::placeholder {
+    color: var(--input-color-disabled);
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    opacity: 0; // Desaparece cuando recibe focus
+  }
+
+  // ESTADO: Hover
+  &:hover:not(:disabled):not(:read-only) {
+    border-color: var(--input-border-hover);
+  }
+
+  // ESTADO: Active
+  &:active:not(:disabled):not(:read-only) {
+    border-color: var(--input-border-active);
+    color: var(--input-color);
+  }
+
+  // ESTADO: Focus-visible
+  &:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: inset var(--input-shadow-focus);
+    border-color: var(--input-border-focus);
+  }
+
+  // ESTADO: Disabled
+  &:disabled {
+    border-color: var(--input-border-disabled);
+    background: var(--input-bg-disabled);
+    color: var(--input-color-disabled);
+    cursor: default;
+    user-select: text;
+    pointer-events: all;
+  }
+
+  &:read-only {
+    border-color: var(--input-border-disabled);
+    background: var(--input-bg-disabled);
+    color: var(--input-color-disabled);
+    cursor: default;
+  }
+
+  // Estilos específicos para type="file"
+  &[type='file']::file-selector-button {
+    border: 0;
+    background-color: transparent;
+    height: 100%;
+  }
+}
+
+.input__field--populated {
+  color: var(--input-color);
+}
+
+.input__field--error {
+  outline: none;
+  border: none;
+  box-shadow: inset var(--input-shadow-error-focus);
+  border-color: var(--input-border-error);
+
+  &:hover:not(:disabled):not(:read-only) {
+    border-color: var(--input-border-error-hover);
+  }
+
+  &:active:not(:disabled):not(:read-only) {
+    border-color: var(--input-border-error-active);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: inset var(--input-shadow-error-focus);
+    border-color: var(--input-border-error-focus);
+  }
+
+  &:disabled,
+  &:read-only {
+    border-color: var(--input-border-error-disabled);
+  }
+}
+
+.input__field--align-right {
+  text-align: right;
+  direction: rtl;
+
+  &::placeholder {
+    direction: rtl;
+  }
+}
+
+.input__field--with-left-icon {
+  padding-left: calc(
+    var(--input-icon-offset) + var(--input-icon-size) + var(--input-icon-offset)
+  );
+
+  &:focus-visible {
+    padding-left: calc(
+      var(--input-icon-offset) + var(--input-icon-size) +
+        var(--input-icon-offset) - 1px
+    );
+  }
+}
+
+.input__field--with-right-icon {
+  padding-right: calc(
+    var(--input-icon-offset) + var(--input-icon-size) + var(--input-icon-offset)
+  );
+
+  &:focus-visible {
+    padding-right: calc(
+      var(--input-icon-offset) + var(--input-icon-size) +
+        var(--input-icon-offset) - 1px
+    );
+  }
+}
+
+.input__icon-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--input-icon-color);
+
+  &[data-position='left'] {
+    left: var(--input-icon-offset);
+  }
+
+  &[data-position='right'] {
+    right: var(--input-icon-offset);
+  }
+
+  &--disabled {
+    color: var(--input-color-disabled);
+  }
+}
+
+.input__clear-button {
+  all: unset;
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: $radius-xs;
+  transition: background-color 150ms ease;
+
+  &:hover {
+    background-color: var(--color-gray-100);
+  }
+
+  &:active {
+    background-color: var(--color-gray-200);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--theme-primary-600);
+    outline-offset: 2px;
+  }
+}
+
+.input__message {
+  font-size: $font-size-sm;
+  line-height: $font-height-sm;
+  color: var(--input-error-text);
+  margin-top: $space-0-5;
+  max-width: 100%;
+  @include overflow-hidden;
+  display: -webkit-box;
+  line-clamp: 2; // Máximo 2 líneas
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+}
+
+.input__message--truncated {
+  cursor: help;
+  position: relative;
+
+  &:hover::after {
+    @include flex-center-center;
+    content: attr(data-full-text);
+    padding: $space-1;
+    gap: $space-1;
+    border-radius: $radius-xs;
+    border: 1px solid var(--theme-overlay-12);
+    background: var(--color-white);
+    color: var(--color-default-primary);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    font-size: $font-size-sm;
+    white-space: normal;
+    max-width: $space-40;
+    z-index: 1000;
+    margin-bottom: $space-0-5;
+  }
+}

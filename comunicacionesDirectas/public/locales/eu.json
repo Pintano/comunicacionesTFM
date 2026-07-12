@@ -2551,6 +2551,25 @@
     "expedientesFiscaliaMenoresJuzgado": "Adingabeen Fiskaltzako Espedienteak",
     "tramitesPendientes": "Zain dauden tramiteak"
   },
+  "subida-ficheros": {
+    "archivoPreparado": "Fitxategia bidaltzeko prest dago",
+    "errorSubida": "Errore bat gertatu da fitxategia igotzean.",
+    "errorTamano": "Fitxategiren batek gehienezko onartutako tamaina gainditzen du: {0} GB.",
+    "extensionNoValida": "Hautatutako fitxategiaren luzapena ez da baliozkoa.",
+    "mensajeDrop": "Arrastatu fitxategiak hona edo hautatu zure gailutik.",
+    "mensajeMaxFicheros": "Ezin dituzu {0} fitxategi baino gehiago erantsi.",
+    "nombreOriginal": "Jatorrizko izena",
+    "seleccionarArchivos": "Fitxategiak hautatu"
+  },
+  "icono": {
+    "ariaLabel": "Ikonoa"
+  },
+  "modal": {
+    "cerrarModal": "Itxi modal leihoa"
+  },
+  "cerrarMensaje": "Itxi mezua",
+  "colapsarMensaje": "Tolestu mezua",
+  "expandirMensaje": "Zabaldu mezua",
   "tiposMensajes": {
     "advertencia": "Ohartarazpen-mezua:",
     "error": "Errore-mezua:",

@@ -1,0 +1,10 @@
+@use '../../../styles';
+
+.cabecera-logo {
+  object-fit: contain;
+
+  &--default {
+    width: var(--space-16);
+    height: var(--space-6);
+  }
+}

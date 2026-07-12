@@ -1,0 +1,69 @@
+@use 'sass:math';
+
+@function fluid-space($desktop, $mobile) {
+  $slope: math.div(($desktop - $mobile), (768px - 320px));
+  $base: $mobile - $slope * 320px;
+
+  @return clamp(
+    #{$mobile},
+    calc(#{$base} + #{$slope * 100}vw),
+    #{$desktop}
+  );
+}
+
+// space
+$space-0: 0;
+$space-0-25: 2px;
+$space-0-5: 4px;
+$space-0-75: fluid-space(6px, 4px);
+$space-1: 8px;
+$space-1-5: fluid-space(12px, 8px);
+$space-2: fluid-space(16px, 12px);
+$space-2-5: fluid-space(20px, 16px);
+$space-3: fluid-space(24px, 16px);
+$space-3-5: fluid-space(28px, 20px);
+$space-4: fluid-space(32px, 24px);
+$space-4-5: fluid-space(36px, 28px);
+$space-5: fluid-space(40px, 32px);
+$space-6: fluid-space(48px, 40px);
+$space-7: fluid-space(56px, 48px);
+$space-8: fluid-space(64px, 56px);
+$space-9: fluid-space(72px, 64px);
+$space-10: fluid-space(80px, 72px);
+$space-11: fluid-space(88px, 80px);
+$space-12: fluid-space(96px, 88px);
+$space-13: fluid-space(104px, 96px);
+$space-14: fluid-space(112px, 104px);
+$space-15: 120px;
+$space-16: 128px;
+$space-18: 144px;
+$space-20: 160px;
+$space-21: 168px;
+$space-22: 176px;
+$space-24: 192px;
+$space-25: 200px;
+$space-28: 224px;
+$space-30: 240px;
+$space-32: 256px;
+$space-33-25: 266px;
+$space-40: 320px;
+$space-44: 352px;
+$space-50: 400px;
+$space-56: 448px;
+$space-64: 512px;
+$space-72: 576px;
+$space-80: 640px;
+
+// space/label
+$space-5xs: 80px;
+$space-4xs: 120px;
+$space-3xs: 136px;
+$space-2xs: 176px;
+$space-xs: 216px;
+$space-sm: 248px;
+$space-md: 512px;
+$space-lg: 768px;
+$space-xl: 1024px;
+$space-2xl: 1280px;
+
+$height-half-screen: 50vh;

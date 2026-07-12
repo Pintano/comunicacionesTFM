@@ -1,0 +1,8 @@
+@use 'spacing' as *;
+@use 'colors' as *;
+
+$shadow-xs: 0 0 #{$space-0-5} 0 $color-trans-black-12;
+$shadow-sm: 0 #{$space-0-25} #{$space-0-5} 0 $color-trans-black-8;
+$shadow-md: 0 #{$space-0-5} #{$space-1} 0 $color-trans-black-16;
+$shadow-lg: 0 #{$space-1} #{$space-3} 0 $color-trans-black-12;
+$shadow-xl: 0 #{$space-2} #{$space-5} 0 $color-trans-black-24;

@@ -1,0 +1,87 @@
+@use '../../../styles' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__chat {
+    @include flex-column;
+    margin: $space-1;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  &__barra {
+    @include flex-center-center;
+    gap: $space-1;
+    padding: $space-3 $space-2;
+    align-items: flex-end;
+
+    &__aviso {
+      display: flex;
+      justify-content: space-around;
+      margin: $space-3 $space-2;
+    }
+  }
+}
+
+.content {
+  &__mensaje {
+    &__propio {
+      @include flex-end;
+      margin: $space-1 0 $space-1 auto;
+    }
+
+    &__ajeno {
+      @include flex-start;
+      margin: $space-1 auto $space-1 0;
+    }
+
+    &__generico {
+      @include flex-center-center;
+      margin: $space-1;
+    }
+  }
+
+  &__fecha {
+    &__separador {
+      @include flex-center-center;
+      position: relative;
+    }
+
+    &__texto {
+      font-family: $font-family-base;
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-xs;
+      line-height: $font-height-sm;
+      letter-spacing: 0%;
+      text-align: center;
+      color: $color-default-primary;
+
+      border-radius: $radius-sm;
+      padding: $space-0-25 $space-1;
+      background-color: $color-trans-black-8;
+    }
+  }
+
+  &__barra {
+    &__adjunto {
+      flex-shrink: 0;
+    }
+    &__input {
+      flex-grow: 1;
+    }
+
+    &__boton {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container__barra {
+    gap: $space-1;
+    padding: $space-1-5 $space-1;
+  }
+}

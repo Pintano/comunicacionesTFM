@@ -1,0 +1,67 @@
+// PSP THEME
+@use '../../foundations/colors' as *;
+
+[data-theme='psp'] {
+  --theme-primary-100: #{$color-green-100};
+  --theme-primary-200: #{$color-green-200};
+  --theme-primary-300: #{$color-green-300};
+  --theme-primary-400: #{$color-green-400};
+  --theme-primary-450: #{$color-green-450};
+  --theme-primary-500: #{$color-green-500};
+  --theme-primary-600: #{$color-green-600};
+  --theme-primary-700: #{$color-green-700};
+  --theme-primary-800: #{$color-green-800};
+  --theme-primary-900: #{$color-green-900};
+
+  --theme-secondary-100: #{$color-green-muted-100};
+  --theme-secondary-200: #{$color-green-muted-200};
+  --theme-secondary-300: #{$color-green-muted-300};
+  --theme-secondary-400: #{$color-green-muted-400};
+  --theme-secondary-500: #{$color-green-muted-500};
+  --theme-secondary-600: #{$color-green-muted-600};
+  --theme-secondary-700: #{$color-green-muted-700};
+  --theme-secondary-800: #{$color-green-muted-800};
+
+  --theme-trans-primary-84: #{$color-trans-green-450-84};
+  --theme-trans-primary-64: #{$color-trans-green-450-64};
+  --theme-trans-primary-54: #{$color-trans-green-450-54};
+  --theme-trans-primary-33: #{$color-trans-green-450-33};
+  --theme-trans-primary-24: #{$color-trans-green-450-24};
+  --theme-trans-primary-16: #{$color-trans-green-450-16};
+  --theme-trans-primary-12: #{$color-trans-green-450-12};
+  --theme-trans-primary-8: #{$color-trans-green-450-8};
+  --theme-trans-primary-4: #{$color-trans-green-450-4};
+  --theme-trans-primary-2: #{$color-trans-green-450-2};
+
+  --theme-primary-tint-10: #{$color-green-gray-10};
+  --theme-primary-tint-20: #{$color-green-gray-20};
+  --theme-primary-tint-30: #{$color-green-gray-30};
+  --theme-primary-tint-40: #{$color-green-gray-40};
+  --theme-primary-tint-50: #{$color-green-gray-50};
+  --theme-primary-tint-60: #{$color-green-gray-60};
+  --theme-primary-tint-70: #{$color-green-gray-70};
+  --theme-primary-tint-80: #{$color-green-gray-80};
+  --theme-primary-tint-90: #{$color-green-gray-90};
+  --theme-primary-tint-100: #{$color-green-gray-100};
+
+  --theme-trans-primary-tint-2: #{$color-trans-green-gray-50-2};
+  --theme-trans-primary-tint-4: #{$color-trans-green-gray-50-4};
+  --theme-trans-primary-tint-8: #{$color-trans-green-gray-50-8};
+  --theme-trans-primary-tint-12: #{$color-trans-green-gray-50-12};
+  --theme-trans-primary-tint-16: #{$color-trans-green-gray-50-16};
+  --theme-trans-primary-tint-24: #{$color-trans-green-gray-50-24};
+  --theme-trans-primary-tint-33: #{$color-trans-green-gray-50-33};
+  --theme-trans-primary-tint-54: #{$color-trans-green-gray-50-54};
+  --theme-trans-primary-tint-64: #{$color-trans-green-gray-50-64};
+  --theme-trans-primary-tint-84: #{$color-trans-green-gray-50-84};
+
+  // PSP-specific overrides
+  --header-bg: var(--theme-primary-700);
+
+  --leyenda-item-blue: #{$color-trans-blue-500-12};
+  --leyenda-item-green: #{$color-trans-green-450-16};
+  --leyenda-item-yellow: #{$color-trans-yellow-500-16};
+  --leyenda-item-red: #{$color-trans-red-500-16};
+  --leyenda-item-purple: #{$color-trans-purple-500-8};
+  --leyenda-item-black: #{$color-trans-black-4};
+}

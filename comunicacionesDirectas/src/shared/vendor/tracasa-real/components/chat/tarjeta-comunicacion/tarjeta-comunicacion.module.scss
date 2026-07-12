@@ -1,0 +1,123 @@
+@use '../../../styles' as *;
+
+.tarjeta {
+  @include flex-center-column;
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  border-radius: $radius-sm;
+  margin-block: $space-2;
+  padding: $space-1-5;
+  cursor: pointer;
+
+  &__archivada {
+    border: 1px solid $color-trans-red-500-54;
+
+    &:focus-visible {
+      border: 2px solid $color-trans-red-500-84;
+    }
+  }
+
+  &__boton {
+    background-color: $color-trans-black-2;
+  }
+
+  &__seleccionada {
+    background: $color-trans-blue-500-8;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  &__disabled {
+    opacity: 0.64;
+
+    &:focus-visible {
+      border: 1px solid $color-trans-red-500-33;
+    }
+  }
+
+  &:hover {
+    background: var(--theme-trans-primary-4);
+  }
+
+  &:active {
+    background: $color-trans-blue-500-8;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus-visible:not(.tarjeta__archivada) {
+    border: 1px solid $color-trans-blue-500-64;
+  }
+}
+
+.texto {
+  &__titulo {
+    flex: 1;
+    min-width: 0;
+    @include overflow-hidden;
+
+    font-family: $font-family-base;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+    line-height: $font-height-md;
+    color: $color-default-primary;
+  }
+
+  &__subtitulo {
+    @include overflow-hidden;
+
+    font-family: $font-family-base;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-md;
+    line-height: $font-height-md;
+    letter-spacing: 0%;
+    color: $color-default-disabled;
+  }
+
+  &__fecha {
+    font-family: $font-family-base;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: $font-height-sm;
+    letter-spacing: 0%;
+    text-align: right;
+    color: $color-default-disabled;
+  }
+
+  &__inferior {
+    @include overflow-hidden;
+
+    font-family: $font-family-base;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: $font-height-sm;
+    letter-spacing: 0%;
+    color: $color-default-disabled;
+  }
+}
+
+.fila {
+  &__superior {
+    @include flex-start-row;
+    gap: $space-1;
+  }
+
+  &__inferior {
+    @include flex-center-row;
+    gap: $space-0-5;
+  }
+}
+
+.icono {
+  flex-shrink: 0;
+  &__primario {
+    color: var(--theme-primary-500);
+  }
+
+  &__secundario {
+    color: var(--color-default-disabled);
+  }
+}
+
+.badge {
+  margin-left: auto;
+}

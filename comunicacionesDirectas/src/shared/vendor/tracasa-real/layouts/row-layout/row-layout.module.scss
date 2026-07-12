@@ -1,0 +1,6 @@
+.row-layout {
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--row-layout-gap) * 0.5rem);
+  justify-content: var(--row-layout-justify-content);
+}

@@ -103,7 +103,7 @@ export function useEnviarAdjunto(
     datosElementosADescargar: DatosElementoADescargar,
   ) => {
     const nuevoMensaje: BocadilloProps = {
-      texto: datosElementosADescargar.Titulo,
+      texto: datosElementosADescargar.Titulo ?? '',
       fecha: new Date(),
       estado: undefined,
       esPropio: true,

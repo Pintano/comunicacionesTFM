@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tabler/icons-react':
+        specifier: 3.39.0
+        version: 3.39.0(react@18.3.1)
       '@tanstack/react-query':
         specifier: ^5.101.2
         version: 5.101.2(react@18.3.1)
@@ -68,9 +71,6 @@ importers:
       set-cookie-parser:
         specifier: ^2.7.2
         version: 2.7.2
-      tracasa-components:
-        specifier: link:..\tracasa-components
-        version: link:../tracasa-components
       turbo-stream:
         specifier: ^3.2.0
         version: 3.2.0
@@ -518,6 +518,14 @@ packages:
 
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+
+  '@tabler/icons-react@3.39.0':
+    resolution: {integrity: sha512-2LeQDdFdBxsWTCwy8MgYze/q/d/o7ePRD7lHscV/0YCHyFLk8TQz/HFnrkM8InI8lpZfKdYegYJXiADtL7J3jA==}
+    peerDependencies:
+      react: '>= 16'
+
+  '@tabler/icons@3.39.0':
+    resolution: {integrity: sha512-nd9f5+OVJNDR13v6rqPdmALkVhDknDuGMLuj16sK9UaRkOTQWwQM+EWG2fMYBNSH8ISsHiXfryNGQogIpsar4g==}
 
   '@tanstack/query-core@5.101.2':
     resolution: {integrity: sha512-hH5MLoJhF7KaIGd7q3xTXGXvslI+GYlM1Z/35aSHHWaCJWB7XvTSHYuV3eM7tw+aE0mT/xMro4M4Q9rCGHT0lw==}
@@ -1499,6 +1507,13 @@ snapshots:
     optional: true
 
   '@rolldown/pluginutils@1.0.1': {}
+
+  '@tabler/icons-react@3.39.0(react@18.3.1)':
+    dependencies:
+      '@tabler/icons': 3.39.0
+      react: 18.3.1
+
+  '@tabler/icons@3.39.0': {}
 
   '@tanstack/query-core@5.101.2': {}
 

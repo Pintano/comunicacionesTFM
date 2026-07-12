@@ -1,0 +1,124 @@
+@use '../../../styles' as *;
+
+.container {
+  @include flex-end-column;
+  padding: $space-1-5;
+  gap: $space-0-5;
+  border-radius: $radius-sm;
+  max-width: 640px;
+
+  --bocadillo-text-color: #{$color-default-primary};
+
+  @media (max-width: 710px) {
+    max-width: 90%;
+  }
+
+  &__propio {
+    border-top-right-radius: 0;
+    background-color: var(--theme-trans-primary-12);
+    align-self: flex-end;
+  }
+
+  &__ajeno {
+    border-top-left-radius: 0;
+    background-color: $color-trans-blue-gray-50-24;
+    align-self: flex-start;
+  }
+
+  &__generico {
+    border: 1px solid $color-trans-black-12;
+
+    --bocadillo-text-color: #{$color-default-disabled};
+  }
+}
+
+.content {
+  @include flex-center-center;
+  flex-wrap: wrap;
+
+  &__texto {
+    font-family: $font-family-base;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-md;
+    line-height: $font-height-md;
+    letter-spacing: 0%;
+    color: var(--bocadillo-text-color);
+
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  &__adjunto {
+    @include flex-start-row;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: $space-0-5;
+    max-width: 100%;
+
+    &__icon {
+      color: $color-default-primary;
+    }
+
+    &__textoIcon {
+      font-family: $font-family-base;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-sm;
+      line-height: $font-height-sm;
+      letter-spacing: 0%;
+      color: $color-default-disabled;
+
+      white-space: nowrap;
+    }
+
+    &__texto {
+      font-family: $font-family-base;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-md;
+      line-height: $font-height-md;
+      letter-spacing: 0%;
+      color: $color-default-primary;
+      @include overflow-hidden;
+    }
+  }
+}
+
+.footer {
+  color: $color-default-disabled;
+  @include flex-center-center;
+  gap: $space-0-5;
+  padding: $space-0-5;
+  white-space: nowrap;
+  margin-left: auto;
+
+  &__hora {
+    font-family: $font-family-base;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: $font-height-sm;
+    letter-spacing: 0%;
+    text-align: right;
+
+    color: $color-default-disabled;
+  }
+
+  &__estado {
+    @include flex-center-center;
+    &__error {
+      color: $color-red-500;
+    }
+
+    &__leido {
+      color: var(--theme-primary-500);
+    }
+
+    &__enviado {
+      color: $color-default-disabled;
+    }
+
+    &__clock {
+      color: $color-default-disabled;
+    }
+  }
+}

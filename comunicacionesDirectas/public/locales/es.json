@@ -2542,6 +2542,25 @@
     "inicio": "Inicio",
     "tramitesPendientes": "Trámites pendientes"
   },
+  "subida-ficheros": {
+    "archivoPreparado": "Archivo preparado para enviar",
+    "errorSubida": "Se ha producido un error al subir el archivo.",
+    "errorTamano": "Alguno de los archivos supera el tamaño máximo permitido de {0} GB.",
+    "extensionNoValida": "El archivo seleccionado no tiene una extensión permitida.",
+    "mensajeDrop": "Arrastra aquí los archivos o selecciónalos desde tu equipo.",
+    "mensajeMaxFicheros": "No puedes adjuntar más de {0} archivos.",
+    "nombreOriginal": "Nombre original",
+    "seleccionarArchivos": "Seleccionar archivos"
+  },
+  "icono": {
+    "ariaLabel": "Icono"
+  },
+  "modal": {
+    "cerrarModal": "Cerrar modal"
+  },
+  "cerrarMensaje": "Cerrar mensaje",
+  "colapsarMensaje": "Colapsar mensaje",
+  "expandirMensaje": "Expandir mensaje",
   "tiposMensajes": {
     "advertencia": "Mensaje de advertencia:",
     "error": "Mensaje de error:",

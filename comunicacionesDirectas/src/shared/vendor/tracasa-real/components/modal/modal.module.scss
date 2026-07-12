@@ -1,0 +1,207 @@
+@use '../../styles' as *;
+
+.modal {
+  &__overlay {
+    @include flex-center-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-modal;
+    background-color: $color-trans-black-33;
+    animation: fade-in $duration-medium $ease-spring;
+  }
+
+  &__content {
+    @include flex-column;
+    background-color: $color-lightest;
+    width: 100%;
+    max-height: 90%;
+    margin: 0 $space-2;
+    border-radius: $radius-sm;
+    border: 1px solid $color-trans-black-12;
+    box-shadow: $shadow-xl;
+    animation: slide-up-fade-in $duration-medium $ease-spring;
+
+    &--exiting {
+      animation: slide-down-fade-out $duration-fast $ease-spring;
+    }
+  }
+
+  &__header {
+    @include flex-between-start;
+    gap: $space-5;
+    padding: $space-5 $space-5 0 $space-5;
+
+    &--compact {
+      gap: $space-3;
+      padding: $space-3 $space-3 0 $space-3;
+    }
+  }
+
+  &__title-wrapper {
+    @include flex-column;
+    gap: $space-0-5;
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-default-primary;
+    font-size: $font-size-xl;
+    line-height: $font-height-xl;
+    font-weight: $font-weight-bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+
+    &--compact {
+      font-size: $font-size-xl-compact;
+    }
+
+    &:focus {
+      outline: 2px solid var(--theme-primary-500);
+      outline-offset: 2px;
+      border-radius: $radius-xs;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: $color-default-secondary;
+    font-size: $font-size-lg;
+    line-height: $font-height-lg;
+    font-weight: $font-weight-regular;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: $space-4 $space-5 $space-5 $space-5;
+
+    &--compact {
+      margin: $space-2 $space-3 $space-3 $space-3;
+    }
+
+    &--has-overflow {
+      padding-right: $space-3;
+    }
+
+    &::-webkit-scrollbar {
+      width: $space-1;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-scrollbar-background;
+      border-radius: $radius-md;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-scrollbar-foreground;
+      border-radius: $radius-md;
+
+      &:hover {
+        background: $color-gray-500;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__footer {
+    @include flex-end-center;
+    gap: $space-2;
+    padding: $space-4 $space-5;
+    border-radius: 0 0 $radius-sm $radius-sm;
+    border-top: 1px solid $color-trans-black-4;
+    background-color: $color-blue-gray-10;
+
+    &--compact {
+      padding: $space-2 $space-3;
+      gap: $space-1-5;
+    }
+  }
+
+  &--size-medium {
+    max-width: $space-md;
+  }
+
+  &--size-large {
+    max-width: $space-lg;
+  }
+
+  &--size-full {
+    @include flex-column;
+    max-width: $space-xl;
+  }
+
+  &--size-wide {
+    @include flex-column;
+    max-width: $space-2xl;
+  }
+
+  &--size-fit {
+    @include flex-column;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+
+  &--size-full &__body,
+  &--size-wide &__body {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 769px) {
+  .modal {
+    &__overlay {
+      height: calc(100% - var(--sidebar-height, 0px));
+    }
+
+    &__content {
+      max-height: 95%;
+      margin: 0 $space-2;
+    }
+
+    &--size-full,
+    &--size-wide {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    &__header {
+      gap: $space-3;
+      padding: $space-3 $space-3 0 $space-3;
+    }
+
+    &__body {
+      margin: $space-2 $space-3 $space-3 $space-3;
+    }
+
+    &__footer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: $space-2;
+      padding: $space-3;
+
+      > * {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// ========================================
+// CSS CUSTOM PROPERTIES - RADIUS
+// Auto-generated from foundations/radius
+// ========================================
+
+@use '../foundations/radius' as *;
+
+$radius-tokens: (
+  'none': $radius-none,
+  '2xs': $radius-2xs,
+  'xs': $radius-xs,
+  'sm': $radius-sm,
+  'md': $radius-md,
+  'lg': $radius-lg,
+  'xl': $radius-xl,
+  'full': $radius-full,
+);
+
+:root {
+  @each $name, $value in $radius-tokens {
+    --radius-#{$name}: #{$value};
+  }
+}

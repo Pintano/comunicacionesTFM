@@ -1,0 +1,36 @@
+html {
+  font-family:
+    'Segoe UI',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: var(--font-size-md, 14px);
+  color: var(--color-default-primary, var(--color-gray-900));
+}
+
+body {
+  background-color: var(--background-color, white);
+}
+
+::-webkit-scrollbar {
+  width: var(--space-0-75);
+  height: var(--space-0-75);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-foreground);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-gray-500);
+  }
+}

@@ -1,0 +1,110 @@
+@use '../foundations/colors' as *;
+@use '../foundations/spacing' as *;
+@use '../foundations/radius' as *;
+@use '../foundations/opacity' as *;
+
+// Import modular CSS custom properties
+@use './css-spacing';
+@use './css-typography';
+@use './css-radius';
+@use './css-shadows';
+@use './css-colors';
+@use './css-opacity';
+
+// Las aplicaciones usarán estos nombres semánticos, los temas proporcionan los valores
+
+:root {
+  --theme-lightest: #{$color-lightest};
+  --theme-darkest: #{$color-darkest};
+
+  --theme-primary-100: #{$color-blue-100};
+  --theme-primary-200: #{$color-blue-200};
+  --theme-primary-300: #{$color-blue-300};
+  --theme-primary-400: #{$color-blue-400};
+  --theme-primary-500: #{$color-blue-500};
+  --theme-primary-600: #{$color-blue-600};
+  --theme-primary-700: #{$color-blue-700};
+  --theme-primary-800: #{$color-blue-800};
+  --theme-primary-900: #{$color-blue-900};
+
+  --theme-secondary-100: #{$color-blue-steel-100};
+  --theme-secondary-200: #{$color-blue-steel-200};
+  --theme-secondary-300: #{$color-blue-steel-300};
+  --theme-secondary-400: #{$color-blue-steel-400};
+  --theme-secondary-500: #{$color-blue-steel-500};
+  --theme-secondary-600: #{$color-blue-steel-600};
+  --theme-secondary-700: #{$color-blue-steel-700};
+  --theme-secondary-800: #{$color-blue-steel-800};
+
+  // ========================================
+  // PRIMARY TRANSPARENCIES
+  // ========================================
+  --theme-trans-primary-84: #{$color-trans-blue-500-84};
+  --theme-trans-primary-64: #{$color-trans-blue-500-64};
+  --theme-trans-primary-54: #{$color-trans-blue-500-54};
+  --theme-trans-primary-33: #{$color-trans-blue-500-33};
+  --theme-trans-primary-24: #{$color-trans-blue-500-24};
+  --theme-trans-primary-16: #{$color-trans-blue-500-16};
+  --theme-trans-primary-12: #{$color-trans-blue-500-12};
+  --theme-trans-primary-8: #{$color-trans-blue-500-8};
+  --theme-trans-primary-4: #{$color-trans-blue-500-4};
+  --theme-trans-primary-2: #{$color-trans-blue-500-2};
+
+  // ========================================
+  // PRIMARY TINTS
+  // ========================================
+  --theme-primary-tint-10: #{$color-blue-gray-10};
+  --theme-primary-tint-20: #{$color-blue-gray-20};
+  --theme-primary-tint-30: #{$color-blue-gray-30};
+  --theme-primary-tint-40: #{$color-blue-gray-40};
+  --theme-primary-tint-50: #{$color-blue-gray-50};
+  --theme-primary-tint-60: #{$color-blue-gray-60};
+  --theme-primary-tint-70: #{$color-blue-gray-70};
+  --theme-primary-tint-80: #{$color-blue-gray-80};
+  --theme-primary-tint-90: #{$color-blue-gray-90};
+  --theme-primary-tint-100: #{$color-blue-gray-100};
+
+  --theme-trans-primary-tint-2: #{$color-trans-blue-gray-50-2};
+  --theme-trans-primary-tint-4: #{$color-trans-blue-gray-50-4};
+  --theme-trans-primary-tint-8: #{$color-trans-blue-gray-50-8};
+  --theme-trans-primary-tint-12: #{$color-trans-blue-gray-50-12};
+  --theme-trans-primary-tint-16: #{$color-trans-blue-gray-50-16};
+  --theme-trans-primary-tint-24: #{$color-trans-blue-gray-50-24};
+  --theme-trans-primary-tint-33: #{$color-trans-blue-gray-50-33};
+  --theme-trans-primary-tint-54: #{$color-trans-blue-gray-50-54};
+  --theme-trans-primary-tint-64: #{$color-trans-blue-gray-50-64};
+  --theme-trans-primary-tint-84: #{$color-trans-blue-gray-50-84};
+
+  --theme-overlay-2: #{$color-trans-black-2};
+  --theme-overlay-4: #{$color-trans-black-4};
+  --theme-overlay-8: #{$color-trans-black-8};
+  --theme-overlay-12: #{$color-trans-black-12};
+  --theme-overlay-16: #{$color-trans-black-16};
+  --theme-overlay-24: #{$color-trans-black-24};
+  --theme-overlay-33: #{$color-trans-black-33};
+  --theme-overlay-54: #{$color-trans-black-54};
+  --theme-overlay-64: #{$color-trans-black-64};
+  --theme-overlay-84: #{$color-trans-black-84};
+
+  --theme-dark-overlay-2: #{$color-trans-white-4};
+  --theme-dark-overlay-4: #{$color-trans-white-8};
+  --theme-dark-overlay-8: #{$color-trans-white-12};
+  --theme-dark-overlay-12: #{$color-trans-white-16};
+  --theme-dark-overlay-16: #{$color-trans-white-24};
+  --theme-dark-overlay-24: #{$color-trans-white-33};
+  --theme-dark-overlay-33: #{$color-trans-white-54};
+  --theme-dark-overlay-54: #{$color-trans-white-64};
+  --theme-dark-overlay-64: #{$color-trans-white-84};
+  --theme-dark-overlay-84: #{$color-trans-white-94};
+
+  // Cabecera y diseño (adaptable al tema)
+  --header-bg: var(--theme-primary-800);
+  --header-height: #{$space-9};
+  --sidebar-width: 4.5rem;
+  --sidebar-height: 0;
+  --border-radius: #{$radius-sm};
+  --border-color: #{$color-border};
+  --background-color: var(--color-white);
+  --background-color-secondary: #{$color-blue-gray-10};
+  --background-color-inverse: #{$color-surface-secondary};
+}

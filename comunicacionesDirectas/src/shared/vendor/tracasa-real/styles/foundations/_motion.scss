@@ -1,0 +1,107 @@
+@use './spacing' as *;
+
+// Primitivas de movimiento y temporización basadas en patrones existentes del proyecto
+
+// Duraciones
+$duration-instant: 80ms;
+$duration-fast: 150ms;
+$duration-medium: 180ms;
+$duration-normal: 0.3s;
+$duration-slow: 0.5s;
+
+// Easings personalizados
+$ease-linear: linear;
+$ease-in: ease-in;
+$ease-out: ease-out;
+$ease-in-out: ease-in-out;
+$ease: ease;
+$ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+
+// Transiciones básicas
+$transition-colors:
+  color $duration-fast $ease-in-out,
+  background-color $duration-fast $ease-in-out,
+  border-color $duration-fast $ease-in-out;
+
+$transition-all: all $duration-fast $ease-in-out;
+
+$transition-smooth:
+  transform $duration-normal $ease,
+  opacity $duration-fast $ease;
+
+$transition-fast:
+  transform $duration-instant $ease,
+  opacity $duration-instant $ease;
+
+// Transiciones específicas para componentes
+$transition-modal-enter:
+  opacity $duration-medium $ease-spring,
+  transform $duration-medium $ease-spring;
+$transition-modal-exit:
+  opacity $duration-fast $ease-spring,
+  transform $duration-fast $ease-spring;
+$transition-popup:
+  opacity $duration-medium $ease-spring,
+  transform $duration-medium $ease-spring;
+$transition-list-item:
+  opacity $duration-fast $ease-spring,
+  transform $duration-fast $ease-spring;
+$transition-input:
+  opacity $duration-fast $ease,
+  transform $duration-fast $ease,
+  border-color $duration-fast $ease,
+  background-color $duration-fast $ease,
+  color $duration-fast $ease,
+  box-shadow $duration-fast $ease;
+
+// Keyframes
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-$space-1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY($space-1-5);
+  }
+}
+
+@keyframes slide-up-small-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-$space-0-5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

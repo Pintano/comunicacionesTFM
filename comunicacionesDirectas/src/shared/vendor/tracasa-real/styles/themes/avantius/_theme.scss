@@ -1,0 +1,40 @@
+// AVANTIUS THEME
+@use '../../foundations/colors' as *;
+
+// CSS Custom Properties for Avantius theme (blue-based)
+[data-theme='avantius'],
+[data-theme='default'],
+:root:not([data-theme]) {
+  --theme-primary-100: #{$color-blue-100};
+  --theme-primary-200: #{$color-blue-200};
+  --theme-primary-300: #{$color-blue-300};
+  --theme-primary-400: #{$color-blue-400};
+  --theme-primary-500: #{$color-blue-500};
+  --theme-primary-600: #{$color-blue-600};
+  --theme-primary-700: #{$color-blue-700};
+  --theme-primary-800: #{$color-blue-800};
+  --theme-primary-900: #{$color-blue-900};
+
+  --theme-secondary-100: #{$color-blue-steel-100};
+  --theme-secondary-200: #{$color-blue-steel-200};
+  --theme-secondary-300: #{$color-blue-steel-300};
+  --theme-secondary-400: #{$color-blue-steel-400};
+  --theme-secondary-500: #{$color-blue-steel-500};
+  --theme-secondary-600: #{$color-blue-steel-600};
+  --theme-secondary-700: #{$color-blue-steel-700};
+  --theme-secondary-800: #{$color-blue-steel-800};
+
+  --theme-trans-primary-84: #{$color-trans-blue-500-84};
+  --theme-trans-primary-64: #{$color-trans-blue-500-64};
+  --theme-trans-primary-54: #{$color-trans-blue-500-54};
+  --theme-trans-primary-33: #{$color-trans-blue-500-33};
+  --theme-trans-primary-24: #{$color-trans-blue-500-24};
+  --theme-trans-primary-16: #{$color-trans-blue-500-16};
+  --theme-trans-primary-12: #{$color-trans-blue-500-12};
+  --theme-trans-primary-8: #{$color-trans-blue-500-8};
+  --theme-trans-primary-4: #{$color-trans-blue-500-4};
+  --theme-trans-primary-2: #{$color-trans-blue-500-2};
+
+  // Avantius-specific overrides
+  --header-bg: var(--theme-primary-800);
+}

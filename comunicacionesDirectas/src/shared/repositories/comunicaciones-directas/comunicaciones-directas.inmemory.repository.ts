@@ -5,7 +5,6 @@ import {
   ArchivarConversacionesCommand,
   AsignarArchivoAMensajeCommand,
   ComprobarConsentimientoComunicacionesQuery,
-  ComunicacionDirectaClient,
   Conversacion,
   ConversacionesPorUsuarioResponse,
   EnviarMensajeCommand,
@@ -236,7 +235,8 @@ export class ComunicacionesDirectasInMemory
     Object.keys(this.mensajesPorConversacion).forEach((idConversacion) => {
       const mensajesActualizados = this.mensajesPorConversacion[idConversacion].map(
         (m) =>
-          idsMensajes.includes(m.idMensajeEncriptado)
+          (m.idMensajeEncriptado != null &&
+            idsMensajes.includes(m.idMensajeEncriptado))
             ? { ...m, estadoMensaje: EstadosMensajeConversacion.Leido }
             : m,
       );

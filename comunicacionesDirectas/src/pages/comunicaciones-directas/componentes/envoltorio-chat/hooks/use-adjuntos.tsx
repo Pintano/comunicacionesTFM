@@ -51,9 +51,7 @@ export function useAdjuntos(
     campo: keyof DatosElementosAConsolidar,
   ) => {
     setArchivosPendientes((prev) =>
-      prev.map((item, index) =>
-        index === id ? { ...item, [campo]: value } : item,
-      ),
+      prev.map((item) => (item.id === id ? { ...item, [campo]: value } : item)),
     );
   };
 

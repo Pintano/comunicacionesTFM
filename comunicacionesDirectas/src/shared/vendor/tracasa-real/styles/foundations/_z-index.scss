@@ -1,0 +1,10 @@
+// Escala Z-index basada en el uso existente del proyecto
+
+$z-base: 0;
+$z-behind: -1;
+$z-normal: 1;
+$z-docked: 9;
+$z-above: 10;
+$z-sticky: 50;
+$z-dropdown: 100;
+$z-modal: 9999;

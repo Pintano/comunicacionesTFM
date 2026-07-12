@@ -1,0 +1,52 @@
+@use '../../styles' as *;
+
+.badge {
+  @include flex-center-center;
+  color: var(--theme-lightest);
+  flex-shrink: 0;
+  padding: 0 $space-0-5;
+  width: $space-1;
+  height: $space-1;
+  border-radius: $radius-sm;
+  margin-left: auto;
+
+  &--alert {
+    background-color: var(--color-red-500);
+  }
+
+  &--info {
+    background-color: var(--theme-primary-600);
+  }
+
+  &--counter {
+    background-color: var(--theme-primary-tint-60);
+    color: var(--color-default-primary);
+  }
+
+  &--numeric {
+    width: auto;
+    height: auto;
+  }
+
+  &--overflow {
+    width: $space-3;
+  }
+
+  &--fixed {
+    position: absolute;
+    top: -$space-0-5;
+    right: -$space-0-5;
+    display: inline-flex;
+  }
+
+  &__count {
+    color: var(--theme-lightest);
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: $font-height-sm;
+
+    &--counter {
+      color: var(--color-default-primary);
+    }
+  }
+}

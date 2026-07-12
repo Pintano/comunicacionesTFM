@@ -1,0 +1,82 @@
+// ========================================
+// CSS CUSTOM PROPERTIES - TYPOGRAPHY
+// Auto-generated from foundations/typography
+// ========================================
+
+@use '../foundations/typography' as *;
+@use 'sass:map';
+
+:root {
+  --font-family-base: #{$font-family-base};
+}
+
+$font-weights: (
+  'light': $font-weight-light,
+  'regular': $font-weight-regular,
+  'semibold': $font-weight-semibold,
+  'bold': $font-weight-bold,
+  'black': $font-weight-black,
+);
+
+:root {
+  @each $name, $value in $font-weights {
+    --font-weight-#{$name}: #{$value};
+  }
+}
+
+$font-sizes: (
+  'xs': $font-size-xs,
+  'sm': $font-size-sm,
+  'md': $font-size-md,
+  'lg': $font-size-lg,
+  'xl-compact': $font-size-xl-compact,
+  'xl': $font-size-xl,
+  '2xl': $font-size-2xl,
+  '3xl': $font-size-3xl,
+  '4xl': $font-size-4xl,
+  '5xl': $font-size-5xl,
+  '6xl': $font-size-6xl,
+);
+
+:root {
+  @each $name, $value in $font-sizes {
+    --font-size-#{$name}: #{$value};
+  }
+}
+
+$font-heights: (
+  'sm': $font-height-sm,
+  'md': $font-height-md,
+  'lg': $font-height-lg,
+  'xl': $font-height-xl,
+  '2xl': $font-height-2xl,
+  '3xl': $font-height-3xl,
+);
+
+:root {
+  @each $name, $value in $font-heights {
+    --font-height-#{$name}: #{$value};
+  }
+}
+
+$font-semantics: (
+  'heading-xs': $font-heading-xs,
+  'heading-sm': $font-heading-sm,
+  'heading-md': $font-heading-md,
+  'heading-lg': $font-heading-lg,
+  'heading-xl': $font-heading-xl,
+  'heading-2xl': $font-heading-2xl,
+  'heading-3xl': $font-heading-3xl,
+  'body-sm': $font-body-sm,
+  'body-md': $font-body-md,
+  'caption': $font-caption,
+);
+
+@each $style-name, $style-props in $font-semantics {
+  .font-#{$style-name} {
+    font-family: map.get($style-props, 'font-family');
+    font-size: map.get($style-props, 'font-size');
+    line-height: map.get($style-props, 'line-height');
+    font-weight: map.get($style-props, 'font-weight');
+  }
+}

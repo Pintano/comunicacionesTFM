@@ -1,0 +1,128 @@
+@use '../../../styles' as *;
+
+:root {
+  --icon-btn-bg: transparent;
+  --icon-btn-bg-hover: var(--theme-overlay-4);
+  --icon-btn-bg-active: var(--theme-overlay-2);
+  --icon-btn-text: var(--color-default-secondary);
+  --icon-btn-text-hover: var(--color-default-primary);
+  --icon-btn-text-active: var(--color-default-disabled);
+  --icon-btn-text-disabled: var(--color-default-primary);
+  --icon-btn-text-white: var(--color-white);
+
+  --icon-btn-disabled-opacity: #{$opacity-md};
+  --icon-btn-focus-outline: var(--theme-dark-overlay-54);
+}
+
+.icon-button {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  border-radius: $radius-xs;
+  transition: $transition-colors;
+
+  background-color: var(--icon-btn-bg);
+  color: var(--icon-btn-text);
+
+  &:hover {
+    background-color: var(--icon-btn-bg-hover);
+    color: var(--icon-btn-text-hover);
+  }
+
+  &:active {
+    background-color: var(--icon-btn-bg-active);
+    color: var(--icon-btn-text-active);
+  }
+
+  &:focus-visible {
+    border: 2px solid var(--icon-btn-focus-outline);
+    outline: none;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    background-color: var(--icon-btn-bg);
+    color: var(--icon-btn-text-disabled);
+    opacity: var(--icon-btn-disabled-opacity);
+  }
+
+  // Size variants
+  &--xs {
+    height: $space-2;
+    width: $space-2;
+
+    & svg {
+      height: $space-2;
+      width: $space-2;
+    }
+  }
+
+  &--sm {
+    height: $space-3;
+    width: $space-3;
+
+    & svg {
+      height: $space-2;
+      width: $space-2;
+    }
+  }
+
+  &--md {
+    height: $space-4;
+    width: $space-4;
+
+    & svg {
+      height: $space-3;
+      width: $space-3;
+      stroke-width: 1.5;
+    }
+  }
+
+  &--lg {
+    height: $space-5;
+    width: $space-5;
+
+    & svg {
+      height: $space-3;
+      width: $space-3;
+      stroke-width: 1.5;
+    }
+  }
+
+  // Color variants
+  &--white {
+    color: var(--icon-btn-text-white) !important;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: var(--icon-btn-text-white) !important;
+    }
+
+    &.icon-button--disabled {
+      color: var(--icon-btn-text-white) !important;
+      opacity: var(--icon-btn-disabled-opacity);
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--icon-btn-text-hover);
+    }
+
+    &:active {
+      background-color: transparent;
+      color: var(--icon-btn-text-active);
+    }
+
+    &.icon-button--disabled {
+      background-color: transparent;
+    }
+  }
+}

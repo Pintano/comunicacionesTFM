@@ -1,0 +1,323 @@
+// ========================================
+// CSS CUSTOM PROPERTIES - COLORS
+// Auto-generated color scales
+// ========================================
+
+@use '../foundations/colors' as *;
+
+// color/blue
+$blue-colors: (
+  '100': $color-blue-100,
+  '200': $color-blue-200,
+  '300': $color-blue-300,
+  '400': $color-blue-400,
+  '500': $color-blue-500,
+  '600': $color-blue-600,
+  '700': $color-blue-700,
+  '800': $color-blue-800,
+  '900': $color-blue-900,
+);
+
+// color/blue-steel
+$blue-steel-colors: (
+  '100': $color-blue-steel-100,
+  '200': $color-blue-steel-200,
+  '300': $color-blue-steel-300,
+  '400': $color-blue-steel-400,
+  '500': $color-blue-steel-500,
+  '600': $color-blue-steel-600,
+  '700': $color-blue-steel-700,
+  '800': $color-blue-steel-800,
+);
+
+// color/blue-gray
+$blue-gray-colors: (
+  '10': $color-blue-gray-10,
+  '20': $color-blue-gray-20,
+  '30': $color-blue-gray-30,
+  '40': $color-blue-gray-40,
+  '50': $color-blue-gray-50,
+  '60': $color-blue-gray-60,
+  '70': $color-blue-gray-70,
+  '80': $color-blue-gray-80,
+  '90': $color-blue-gray-90,
+  '100': $color-blue-gray-100,
+);
+
+// color/blue-pale
+$blue-pale-colors: (
+  '100': $color-blue-pale-100,
+  '200': $color-blue-pale-200,
+  '300': $color-blue-pale-300,
+  '400': $color-blue-pale-400,
+  '500': $color-blue-pale-500,
+  '600': $color-blue-pale-600,
+  '700': $color-blue-pale-700,
+  '800': $color-blue-pale-800,
+  '900': $color-blue-pale-900,
+);
+
+// color/red
+$red-colors: (
+  '100': $color-red-100,
+  '200': $color-red-200,
+  '300': $color-red-300,
+  '400': $color-red-400,
+  '500': $color-red-500,
+  '600': $color-red-600,
+  '700': $color-red-700,
+  '800': $color-red-800,
+  '900': $color-red-900,
+);
+
+// color-red-pale
+$red-pale-colors: (
+  '100': $color-red-pale-100,
+  '200': $color-red-pale-200,
+  '300': $color-red-pale-300,
+  '400': $color-red-pale-400,
+  '500': $color-red-pale-500,
+  '600': $color-red-pale-600,
+  '700': $color-red-pale-700,
+  '800': $color-red-pale-800,
+  '900': $color-red-pale-900,
+);
+
+// color/green
+$green-colors: (
+  '100': $color-green-100,
+  '200': $color-green-200,
+  '300': $color-green-300,
+  '400': $color-green-400,
+  '450': $color-green-450,
+  '500': $color-green-500,
+  '600': $color-green-600,
+  '700': $color-green-700,
+  '800': $color-green-800,
+  '900': $color-green-900,
+);
+
+// color/green-muted
+$green-muted-colors: (
+  '100': $color-green-muted-100,
+  '200': $color-green-muted-200,
+  '300': $color-green-muted-300,
+  '400': $color-green-muted-400,
+  '500': $color-green-muted-500,
+  '600': $color-green-muted-600,
+  '700': $color-green-muted-700,
+  '800': $color-green-muted-800,
+  '900': $color-green-muted-900,
+);
+
+// color-green-pale
+$green-pale-colors: (
+  '100': $color-green-pale-100,
+  '200': $color-green-pale-200,
+  '300': $color-green-pale-300,
+  '400': $color-green-pale-400,
+  '500': $color-green-pale-500,
+  '600': $color-green-pale-600,
+  '700': $color-green-pale-700,
+  '800': $color-green-pale-800,
+  '900': $color-green-pale-900,
+);
+
+// color-green-gray
+$green-gray-colors: (
+  '10': $color-green-gray-10,
+  '20': $color-green-gray-20,
+  '30': $color-green-gray-30,
+  '40': $color-green-gray-40,
+  '50': $color-green-gray-50,
+  '60': $color-green-gray-60,
+  '70': $color-green-gray-70,
+  '80': $color-green-gray-80,
+  '90': $color-green-gray-90,
+  '100': $color-green-gray-100,
+);
+
+// color/yellow
+$yellow-colors: (
+  '100': $color-yellow-100,
+  '200': $color-yellow-200,
+  '300': $color-yellow-300,
+  '400': $color-yellow-400,
+  '500': $color-yellow-500,
+  '600': $color-yellow-600,
+  '700': $color-yellow-700,
+  '800': $color-yellow-800,
+  '900': $color-yellow-900,
+);
+
+// color-yellow-pale
+$yellow-pale-colors: (
+  '100': $color-yellow-pale-100,
+  '200': $color-yellow-pale-200,
+  '300': $color-yellow-pale-300,
+  '400': $color-yellow-pale-400,
+  '500': $color-yellow-pale-500,
+  '600': $color-yellow-pale-600,
+  '700': $color-yellow-pale-700,
+  '800': $color-yellow-pale-800,
+  '900': $color-yellow-pale-900,
+);
+
+// color/purple
+$purple-colors: (
+  '100': $color-purple-100,
+  '200': $color-purple-200,
+  '300': $color-purple-300,
+  '400': $color-purple-400,
+  '500': $color-purple-500,
+  '600': $color-purple-600,
+  '700': $color-purple-700,
+  '800': $color-purple-800,
+  '900': $color-purple-900,
+);
+
+// color/purple-pale
+$purple-pale-colors: (
+  '100': $color-purple-pale-100,
+  '200': $color-purple-pale-200,
+  '300': $color-purple-pale-300,
+  '400': $color-purple-pale-400,
+  '500': $color-purple-pale-500,
+  '600': $color-purple-pale-600,
+  '700': $color-purple-pale-700,
+  '800': $color-purple-pale-800,
+  '900': $color-purple-pale-900,
+);
+
+// color/gray
+$gray-scale: (
+  '25': $color-gray-25,
+  '50': $color-gray-50,
+  '100': $color-gray-100,
+  '200': $color-gray-200,
+  '300': $color-gray-300,
+  '400': $color-gray-400,
+  '500': $color-gray-500,
+  '600': $color-gray-600,
+  '700': $color-gray-700,
+  '800': $color-gray-800,
+  '900': $color-gray-900,
+);
+
+// Generate all color scales
+:root {
+  // Blue
+  @each $name, $value in $blue-colors {
+    --color-blue-#{$name}: #{$value};
+  }
+
+  // Blue Steel
+  @each $name, $value in $blue-steel-colors {
+    --color-blue-steel-#{$name}: #{$value};
+  }
+
+  // Blue Gray
+  @each $name, $value in $blue-gray-colors {
+    --color-blue-gray-#{$name}: #{$value};
+  }
+
+  // Blue Pale
+  @each $name, $value in $blue-pale-colors {
+    --color-blue-pale-#{$name}: #{$value};
+  }
+
+  // Red
+  @each $name, $value in $red-colors {
+    --color-red-#{$name}: #{$value};
+  }
+
+  // Red Pale
+  @each $name, $value in $red-pale-colors {
+    --color-red-pale-#{$name}: #{$value};
+  }
+
+  // Greens
+  @each $name, $value in $green-colors {
+    --color-green-#{$name}: #{$value};
+  }
+
+  // Green Muted
+  @each $name, $value in $green-muted-colors {
+    --color-green-muted-#{$name}: #{$value};
+  }
+
+  // Green Pale
+  @each $name, $value in $green-pale-colors {
+    --color-green-pale-#{$name}: #{$value};
+  }
+  // Green Gray
+  @each $name, $value in $green-gray-colors {
+    --color-green-gray-#{$name}: #{$value};
+  }
+
+  // Yellows
+  @each $name, $value in $yellow-colors {
+    --color-yellow-#{$name}: #{$value};
+  }
+
+  // Yellow Pale
+  @each $name, $value in $yellow-pale-colors {
+    --color-yellow-pale-#{$name}: #{$value};
+  }
+
+  // Purple
+  @each $name, $value in $purple-colors {
+    --color-purple-#{$name}: #{$value};
+  }
+
+  // Purple Pale
+  @each $name, $value in $purple-pale-colors {
+    --color-purple-pale-#{$name}: #{$value};
+  }
+
+  // Gray
+  @each $name, $value in $gray-scale {
+    --color-gray-#{$name}: #{$value};
+  }
+}
+
+:root {
+  --color-white: #{$color-lightest};
+  --color-black: #{$color-darkest};
+  --color-surface-primary: #{$color-surface-primary};
+  --color-surface-secondary: #{$color-surface-secondary};
+
+  --color-scrollbar-foreground: #{$color-trans-black-12};
+  --color-scrollbar-background: #{$color-trans-black-4};
+
+  --color-default-primary: #{$color-default-primary};
+  --color-default-secondary: #{$color-default-secondary};
+  --color-default-disabled: #{$color-default-disabled};
+  --color-default-inverse: #{$color-default-inverse};
+}
+
+:root {
+  --color-success: #{$color-green-500};
+  --color-success-light: #{$color-success-light};
+  --color-success-medium: #{$color-success-medium};
+  --color-success-strong: #{$color-success-strong};
+  --color-success-bg: #{$color-success-bg};
+
+  --color-warning: #{$color-yellow-500};
+  --color-warning-light: #{$color-warning-light};
+  --color-warning-medium: #{$color-warning-medium};
+  --color-warning-strong: #{$color-warning-strong};
+  --color-warning-bg: #{$color-warning-bg};
+
+  --color-error: #{$color-red-500};
+  --color-error-light: #{$color-error-light};
+  --color-error-medium: #{$color-error-medium};
+  --color-error-strong: #{$color-error-strong};
+  --color-error-bg: #{$color-error-bg};
+
+  --color-info: var(--theme-primary-500);
+  --color-info-light: #{$color-info-light};
+  --color-info-medium: #{$color-info-medium};
+  --color-info-strong: #{$color-info-strong};
+  --color-info-bg: #{$color-info-bg};
+}

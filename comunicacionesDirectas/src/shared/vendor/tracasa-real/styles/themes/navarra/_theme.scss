@@ -1,0 +1,27 @@
+// NAVARRA THEME
+@use '../../foundations/colors' as *;
+
+// CSS Custom Properties for Navarra theme (turquoise-based)
+[data-theme='navarra'],
+:root:not([data-theme]) {
+  --theme-primary-100: #{$color-navarra-100};
+  --theme-primary-200: #{$color-navarra-200};
+  --theme-primary-300: #{$color-navarra-300};
+  --theme-primary-400: #{$color-navarra-400};
+  --theme-primary-500: #{$color-navarra-500};
+  --theme-primary-600: #{$color-navarra-600};
+  --theme-primary-700: #{$color-navarra-700};
+  --theme-primary-800: #{$color-navarra-800};
+  --theme-primary-900: #{$color-navarra-900};
+
+  --theme-secondary-100: #{$color-navarra-dark-100};
+  --theme-secondary-200: #{$color-navarra-dark-200};
+  --theme-secondary-300: #{$color-navarra-dark-300};
+  --theme-secondary-400: #{$color-navarra-dark-400};
+  --theme-secondary-500: #{$color-navarra-dark-500};
+  --theme-secondary-600: #{$color-navarra-dark-600};
+  --theme-secondary-700: #{$color-navarra-dark-700};
+  --theme-secondary-800: #{$color-navarra-dark-800};
+  // Navarra-specific overrides
+  --header-bg: var(--theme-primary-700);
+}

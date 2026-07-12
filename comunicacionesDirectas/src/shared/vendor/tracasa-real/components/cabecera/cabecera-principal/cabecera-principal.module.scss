@@ -1,0 +1,107 @@
+@use '../../../styles' as *;
+
+.cabecera-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  background-color: var(--header-bg);
+  padding: 0 var(--space-4);
+  height: var(--header-height);
+  color: var(--theme-lightest);
+  width: 100%;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    flex-shrink: 0; // No encoge cuando hay poco espacio
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__separador {
+    width: 1px;
+    height: 30%;
+    min-height: var(--space-6);
+    background-color: var(--theme-dark-overlay-12);
+    flex-shrink: 0;
+  }
+
+  &__title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-1);
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+    color: var(--theme-lightest);
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--theme-dark-overlay-60);
+  }
+
+  &__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-4);
+    flex-grow: 1; // Ocupa el espacio disponible
+    scrollbar-width: none;
+  }
+
+  &__acciones {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0; // No encoge cuando hay poco espacio
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecera-principal {
+    padding: 0 var(--space-2);
+    gap: var(--space-2);
+
+    &__left {
+      gap: var(--space-2);
+    }
+
+    &__title {
+      font-size: var(--font-size-md);
+    }
+
+    &__subtitle {
+      font-size: var(--font-size-xs);
+    }
+
+    &__contenido {
+      gap: var(--space-2);
+    }
+
+    &__acciones {
+      gap: var(--space-1);
+    }
+  }
+}
+
+@media print {
+  .cabecera-principal {
+    display: none;
+  }
+}

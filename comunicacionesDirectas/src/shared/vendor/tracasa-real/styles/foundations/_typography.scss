@@ -1,0 +1,138 @@
+@use 'sass:math';
+
+@function fluid-type(
+  $desktop,
+  $mobile-scale: 0.9,
+  $mobile-min: 320px,
+  $mobile-max: 768px
+) {
+  $mobile: math.round($desktop * $mobile-scale);
+
+  @return clamp(
+    #{$mobile},
+    calc(
+      #{$mobile} + (#{$desktop} - #{$mobile}) *
+        ((100vw - #{$mobile-min}) / (#{$mobile-max} - #{$mobile-min}))
+    ),
+    #{$desktop}
+  );
+}
+
+@function fluid-type-step(
+  $desktop,
+  $mobile,
+  $mobile-min: 320px,
+  $mobile-max: 768px
+) {
+  @return clamp(
+    #{$mobile},
+    calc(
+      #{$mobile} + (#{$desktop} - #{$mobile}) *
+        ((100vw - #{$mobile-min}) / (#{$mobile-max} - #{$mobile-min}))
+    ),
+    #{$desktop}
+  );
+}
+
+// font/family
+$font-family-base: 'Segoe UI';
+
+// font/weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// font/size
+$font-size-xs: fluid-type(10px);
+$font-size-sm: fluid-type(12px);
+$font-size-md: fluid-type(14px);
+$font-size-lg: fluid-type(16px);
+$font-size-xl-compact: fluid-type(20px);
+$font-size-xl: fluid-type(24px);
+$font-size-2xl: fluid-type(32px);
+$font-size-3xl: fluid-type(40px);
+$font-size-4xl: fluid-type(48px);
+$font-size-5xl: fluid-type(52px);
+$font-size-6xl: fluid-type(64px);
+
+// font/height
+$font-height-sm: fluid-type(16px);
+$font-height-md: fluid-type(20px);
+$font-height-lg: fluid-type(24px);
+$font-height-xl: fluid-type(28px);
+$font-height-2xl: fluid-type(32px);
+$font-height-3xl: fluid-type(40px);
+$font-height-4xl: fluid-type(52px);
+$font-height-5xl: fluid-type(60px);
+
+$font-heading-xs: (
+  'font-family': $font-family-base,
+  'font-size': fluid-type-step($font-size-lg, $font-size-lg),
+  'line-height': fluid-type-step($font-height-lg, $font-height-lg),
+  'font-weight': $font-weight-regular,
+);
+
+$font-heading-sm: (
+  'font-family': $font-family-base,
+  'font-size': fluid-type-step($font-size-xl-compact, $font-size-lg),
+  'line-height': fluid-type-step($font-height-lg, $font-height-md),
+  'font-weight': $font-weight-regular,
+);
+
+$font-heading-md: (
+  'font-family': $font-family-base,
+  'font-size': fluid-type-step($font-size-xl, $font-size-xl-compact),
+  'line-height': fluid-type-step($font-height-xl, $font-height-lg),
+  'font-weight': $font-weight-regular,
+);
+
+$font-heading-lg: (
+  'font-family': $font-family-base,
+  'font-size': fluid-type-step($font-size-2xl, $font-size-xl),
+  'line-height': fluid-type-step($font-height-2xl, $font-height-lg),
+  'font-weight': $font-weight-regular,
+);
+
+$font-heading-xl: (
+  'font-family': $font-family-base,
+  'font-size': $font-size-3xl,
+  'line-height': $font-height-3xl,
+  'font-weight': $font-weight-regular,
+);
+
+$font-heading-2xl: (
+  'font-family': $font-family-base,
+  'font-size': $font-size-4xl,
+  'line-height': $font-height-4xl,
+  'font-weight': $font-weight-bold,
+);
+
+$font-heading-3xl: (
+  'font-family': $font-family-base,
+  'font-size': $font-size-5xl,
+  'line-height': $font-height-5xl,
+  'font-weight': $font-weight-bold,
+);
+
+$font-body-sm: (
+  'font-family': $font-family-base,
+  'font-size': $font-size-sm,
+  'line-height': $font-height-sm,
+  'font-weight': $font-weight-regular,
+);
+
+$font-body-md: (
+  'font-family': $font-family-base,
+  'font-size': $font-size-md,
+  'line-height': $font-height-md,
+  'font-weight': $font-weight-regular,
+);
+
+$font-caption: (
+  'font-family': $font-family-base,
+  'font-size': $font-size-xs,
+  'line-height': $font-height-sm,
+  'font-weight': $font-weight-regular,
+);

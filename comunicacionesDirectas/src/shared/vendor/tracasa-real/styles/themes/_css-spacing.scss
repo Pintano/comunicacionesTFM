@@ -1,0 +1,67 @@
+// ========================================
+// CSS CUSTOM PROPERTIES - SPACING
+// Auto-generated from foundations/spacing
+// ========================================
+
+@use '../foundations/spacing' as *;
+
+$spacing-tokens: (
+  '0': $space-0,
+  '0-25': $space-0-25,
+  '0-5': $space-0-5,
+  '0-75': $space-0-75,
+  '1': $space-1,
+  '1-5': $space-1-5,
+  '2': $space-2,
+  '2-5': $space-2-5,
+  '3': $space-3,
+  '3-5': $space-3-5,
+  '4': $space-4,
+  '4-5': $space-4-5,
+  '5': $space-5,
+  '6': $space-6,
+  '7': $space-7,
+  '8': $space-8,
+  '9': $space-9,
+  '10': $space-10,
+  '11': $space-11,
+  '12': $space-12,
+  '13': $space-13,
+  '14': $space-14,
+  '16': $space-16,
+  '18': $space-18,
+  '20': $space-20,
+  '22': $space-22,
+  '24': $space-24,
+  '28': $space-28,
+  '30': $space-30,
+  '32': $space-32,
+  '33-25': $space-33-25,
+  '40': $space-40,
+  '56': $space-56,
+  '64': $space-64,
+  '72': $space-72,
+  '80': $space-80,
+);
+
+$spacing-labels: (
+  '4xs': $space-4xs,
+  '3xs': $space-3xs,
+  '2xs': $space-2xs,
+  'xs': $space-xs,
+  'sm': $space-sm,
+  'md': $space-md,
+  'lg': $space-lg,
+  'xl': $space-xl,
+  '2xl': $space-2xl,
+);
+
+:root {
+  @each $name, $value in $spacing-tokens {
+    --space-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $spacing-labels {
+    --space-#{$name}: #{$value};
+  }
+}

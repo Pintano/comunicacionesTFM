@@ -1,0 +1,116 @@
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin flex-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin flex-start-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin flex-start-column {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@mixin grid-center-center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-end-column {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin overflow-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin flex-start-column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+@mixin flex-center-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin ellipsis-multiline($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.5;
+}

@@ -119,6 +119,7 @@ const ComunicacionesDirectasPage = ({
       {consentimientoActivo ? (
         <LayoutComunicaciones
           colapsableSidebar={false}
+          esVistaDetalle={!!idConversacionSeleccionada}
           sidebar={
             <Componente
               comunicacionesDirectasRepository={comunicacionesDirectasRepository}
